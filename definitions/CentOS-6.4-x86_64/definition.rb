@@ -1,7 +1,7 @@
 Veewee::Session.declare({
   :cpu_count => '1',
-  :memory_size=> '480',
-  :disk_size => '204800',
+  :memory_size=> '512',
+  :disk_size => '40960',
   :disk_format => 'VDI',
   :hostiocache => 'off',
   :os_type_id => 'RedHat6_64',
@@ -26,8 +26,8 @@ Veewee::Session.declare({
   :shutdown_cmd => "/sbin/halt -h -p",
   :postinstall_files => [
     "base.sh",
-    "chef.sh",
-    "puppet.sh",
+    #"chef.sh",
+    #"puppet.sh",
     "vagrant.sh",
     "virtualbox.sh",
     #"vmfusion.sh",
